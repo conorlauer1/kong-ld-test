@@ -1,0 +1,23 @@
+services:
+- connect_timeout: 60000
+  host: httpbin.org
+  name: ldtest-service
+  port: 80
+  protocol: http
+  read_timeout: 120000
+  retries: 0
+  routes:
+  - https_redirect_status_code: 426
+    name: ldtest-route
+    path_handling: v0
+    paths:
+    - /*
+    plugins:
+    - enabled: true 
+      name: testplugin
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+      
