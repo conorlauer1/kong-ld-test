@@ -1,4 +1,4 @@
-local launchDarklyService = require 'datasite.launch_darkly_service'
+local launchDarklyService = require 'modules.launch_darkly_service'
 local ldSDK = require("launchdarkly_server_sdk")
 local FEATURE_FLAG = "<FEAUTURE_FLAG>"
 
