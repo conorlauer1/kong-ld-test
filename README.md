@@ -61,7 +61,7 @@ docker run --rm --network=kong-net \
   -e "KONG_PG_HOST=kong-database" \
   -e "KONG_PG_PASSWORD=kong" \
   -e "KONG_PASSWORD=password" \
-  kongtestld:latest migrations bootstrap
+  kongtestld:latest kong migrations bootstrap
 ```
 
 # Run Kong
